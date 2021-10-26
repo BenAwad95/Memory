@@ -18,7 +18,9 @@ class MemoryList(ListView):
 
 class MemoryUpdate(UpdateView):
     model = Memory
+    fields = '__all__'
 
 class MemoryDelete(DeleteView):
     model = Memory
+    success_url = reverse_lazy('memoryhome:memory_list')
 
