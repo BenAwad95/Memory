@@ -93,3 +93,32 @@ form input[type=submit]{
     border: none;
     margin: auto;
 }
+
+
+/* memories list */
+.memories-list{
+    background-color: hsl(202, 90%, 23%);
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: whitesmoke;
+}
+
+.memories-list h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.memories-list ul {
+    list-style: none;
+}
+
+.memories-list ul li{
+    margin: 0.5rem 0;
+}
+
+.memories-list ul li a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.2rem;
+}

@@ -1,10 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h2>Memories Recodes</h2>
-    <ul>
-        {% for memory in object_list %}
-            <li><a href="{% url 'memoryhome:memory_detail' memory.id %}">{{ memory.memory|truncatewords:5 }}</a> &mdash; <small>{{ memory.created|date }}</small></li>
-        {% endfor %}
-    </ul>
+    <div class="memories-list">
+        <h2>Memories Recodes</h2>
+        <ul>
+            {% for memory in object_list %}
+                <li><a href="{% url 'memoryhome:memory_detail' memory.id %}">{{ memory.memory|truncatewords:5 }}</a> &mdash; <small>{{ memory.created|date }}</small></li>
+                <hr>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock content %}
