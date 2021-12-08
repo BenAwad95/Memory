@@ -9,17 +9,19 @@
     <title>Memory</title>
 </head>
 <body>
-    {% include 'navbar.html' %}
-    <main>
-    {% block content %}
-        <form action="" method='post'>
-            <h2>Store Memory</h2>
-            {% block form %}
-                
-            {% endblock form %}
-            <input type="submit" value="Store">
-        </form>
-    {% endblock content %}
-    </main>
+    <div class="container">    
+        {% include 'navbar.html' %}
+        <main>
+            {% block content %}
+                <form action="" method='post'>
+                    <h2>Store Memory</h2>
+                    {% block form %}
+                        
+                    {% endblock form %}
+                    <input type="submit" value="Store">
+                </form>
+            {% endblock content %}
+        </main>
+    </div>
 </body>
 </html>

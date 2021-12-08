@@ -16,8 +16,17 @@ html, body{
     justify-content: center;
 }
 
+.container{
+    max-width: 500px;
+    overflow: hidden;
+}
+
 nav{
+    width: 100%;
     padding: 1rem;
+    background-color: wheat;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 nav ul {
@@ -43,11 +52,12 @@ nav ul li a:hover{
 }
 
 form{
-    border: 1px solid whitesmoke;
+    width: 100%;
     color: whitesmoke;
     padding: 1rem;
-    border-radius: 10px;
     background-color: hsl(202, 90%, 23%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 form h2{
