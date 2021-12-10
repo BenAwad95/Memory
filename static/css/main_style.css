@@ -22,9 +22,9 @@ html, body{
 }
 
 nav{
-    width: 100%;
     padding: 1rem;
     background-color: wheat;
+    color: hsl(202, 90%, 23%);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -52,7 +52,6 @@ nav ul li a:hover{
 }
 
 form{
-    width: 100%;
     color: whitesmoke;
     padding: 1rem;
     background-color: hsl(202, 90%, 23%);
@@ -62,7 +61,7 @@ form{
 
 form h2{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -80,18 +79,21 @@ form textarea{
     height: 100px;
     margin: 0 auto;
     display: block;
-    font-size: 1.2rem;
 }
 
-form input[type=submit]{
-    display: block;
-    padding: 0.5rem 1rem;
-    background-color: whitesmoke;
-    color: hsl(300, 50%, 15%);
-    font-size: 1.3rem;
+form input[type=submit], form a{
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: wheat;
+    color: hsl(202, 90%, 23%);
+    font-size: 1.2rem;
     border-radius: 5px;
     border: none;
     margin: auto;
+    margin-top: 1rem;
+    text-decoration: none;
 }
 
 
