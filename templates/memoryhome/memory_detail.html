@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <small>{{ memory.created|date }}</small>
-    <p>{{ memory.memory }}</p>
-    <a href="{% url 'memoryhome:memory_update' memory.id %}">Update</a>
-    <a href="{% url 'memoryhome:memory_delete' memory.id %}">Delete</a>
+    <div class="memory-container">
+        <small>{{ memory.created|date }}</small>
+        <p>{{ memory.memory }}</p>
+        <a href="{% url 'memoryhome:memory_update' memory.id %}">Update</a>
+        <a href="{% url 'memoryhome:memory_delete' memory.id %}">Delete</a>
+    </div>
 {% endblock content %}
