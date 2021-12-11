@@ -5,10 +5,14 @@
         <h2>Memories Recodes</h2>
         <hr>
         <ul>
-            {% for memory in object_list %}
-                <li><a href="{% url 'memoryhome:memory_detail' memory.id %}">{{ memory.memory|truncatewords:5 }}</a> &mdash; <small>{{ memory.created|date }}</small></li>
-                <hr>
-            {% endfor %}
+            {% if object_list %}
+                {% for memory in object_list %}
+                    <li><a href="{% url 'memoryhome:memory_detail' memory.id %}">{{ memory.memory|truncatewords:5 }}</a> &mdash; <small>{{ memory.created|date }}</small></li>
+                    <hr>
+                {% endfor %}
+            {% else %}
+                <p style="text-align:center; padding-top: 2rem; font-size:1.1rem;">You didn't sotre any memories yet 😅</p>
+            {% endif %}
         </ul>
     </div>
 {% endblock content %}
