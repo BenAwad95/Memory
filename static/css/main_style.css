@@ -42,7 +42,7 @@ nav ul li{
 nav ul li a {
     text-decoration: none;
     color: inherit;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
     transition: text-decoration 5ms ease-in-out;
 }
@@ -113,6 +113,8 @@ form input[type=submit], form a{
 
 .memories-list ul {
     list-style: none;
+    height: 300px;
+    overflow-y: auto;
 }
 
 .memories-list ul li{
