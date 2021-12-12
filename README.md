@@ -17,5 +17,5 @@ This an app I wnat to build to make the process to store you memory more easy, I
 
 `'py manage.py runserver'`
 
-## Contribution.
-Any contribations are welcome❤
+## contribution.
+Any contributions are welcome❤
